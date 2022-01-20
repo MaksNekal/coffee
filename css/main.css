@@ -1,0 +1,529 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    color:#415167;
+    font-size: 16px;
+    background-color: #F9FBFF;
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.conteiner{
+    width: auto;
+   
+}
+
+h1, h2, h3, h4, h5, h6{
+
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    display: block;
+
+}
+
+h2{
+   font-family:  'Montserrat', sans-serif;;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 87px;
+}
+
+h5{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+ul, li{
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    display: block;
+    text-decoration: none ;
+    color: #EDF0F5;
+}
+
+button {
+    border: none;
+}
+
+section{
+    text-align: center;
+}
+
+.conteiner{
+    padding-left: 180px;
+}
+
+header{
+    background-color: #EDF0F5;
+    height: fit-content;
+    width: 100%;
+}
+
+
+.block-header{
+    display: flex;
+    position: relative;
+}
+
+.left-side{
+    z-index: 9;
+    padding-left: 301px;
+}
+
+.logo{
+    padding-top: 72px;
+}
+
+.title{
+    font-size: 54px;
+    font-weight: 900px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.3em;
+    margin-top: 392px;
+    width: 486px;
+}
+
+.title__bg{
+    background-color: #C7A17A;
+    padding: 0 18px;
+    margin-left: -18px;
+    color:#fff;
+    
+}
+
+.right-side{
+    display: flex;
+   margin-left: -200px;
+}
+
+.img-video {
+   position: relative;
+   width: 690px;
+   height: 768px;
+}
+
+.play-btn {
+    width: 54px;
+    height: 54px;
+    border-radius: 50px;
+    background-color: #fff;
+    border: none;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.play-btn::after{
+    content: "";
+    background-image: url(../img/Triangle.svg) ;
+    display: block;
+    width: 11.5px;
+    height: 13.8px; 
+}
+
+.play-btn:hover{
+    background-color: #415167;
+}
+
+.nav {
+    width: 240px;
+    background-color: #415167;
+    height: 100%;
+    padding: 72px 57px 0px;
+    position: relative;
+    display: block;
+    
+}
+
+.shopping-cart {
+    background-color: #415167;
+    position: relative;
+}
+
+.shopping-cart::after{
+    content: '2';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #C7A17A;
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: -14px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    line-height: 3em;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300 ;
+    margin-top: 118px;
+}
+
+.features {
+    margin-bottom: 128px;
+}
+.list-card {
+    display: flex;
+    justify-content: space-between;
+    width: 1105px;
+    margin: 0 auto;
+    margin-top: 72px;
+}
+.card {
+    width: 226px;
+}
+
+.card img {
+    margin-bottom: 41px;
+    padding-top: 17px;
+}
+
+.card p{
+    margin-top: 13px;
+}
+
+.coffee {
+    
+    background: linear-gradient(90deg, #415167 25%, #F9FBFF 0%);
+}
+
+.background{
+    width: 328px;
+    height: 100%;
+    background-color: #415167;
+}
+
+ .list-product{
+    margin-left: 130px;
+    margin-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+}  
+
+.product-card {
+    width: 559px !important;
+    height: 256px;
+    display: flex !important;
+    flex: 1 100%;
+    box-shadow: 0 4px 24px #CDCDCD;
+    background-color: #fff;
+    margin-bottom: 32px;
+}
+
+.card__img{
+    background-color: #EDF0F5;
+}
+
+.card__infomation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 45px;
+}
+
+.price{
+    color: #C7A17A;
+    padding: 42px 0 8px;
+}
+
+.card__title{
+    margin-bottom: 24px;
+}
+
+.card__paragraph{
+    margin-bottom: 38px;
+    text-align: left;
+}
+
+.card__paragraph_size{
+    width: 238px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.button-card{
+    display: flex;
+    
+}
+
+.buy-button{
+    background-color: #C7A17A;
+    color:#fff;
+    width: 134px;
+    height: 32px;
+    border-radius: 19px;
+    transition: all 0.5s ease;
+}
+
+.buy-button:hover{
+    background-color: #415167;
+    color:#fff;
+    width: 137px;
+    height: 33px;
+    border-radius: 19px;
+}
+
+.buy-button_margin{
+    margin-right: 30px;
+}
+
+.detail-button{
+    background-color: #fff;
+    font-weight: bold;
+    color: #415167;
+    
+}
+
+.detail-button:hover{
+    background-color: #fff;
+    font-weight: bold;
+    color: #415167;
+    text-decoration: underline solid;
+}
+
+.gifset{
+    padding-bottom: 126px;
+    background: linear-gradient(90deg, #EDF0F5 80%, #F9FBFF 0%);
+}
+
+.gifset h2{
+    margin-bottom: 68px;
+}
+
+.gifset-list{
+    display: flex;
+    position: relative;
+    margin-left: 386px;
+    background-color: #fff;
+    height: 460px;
+    width: 882px;
+}
+
+.gifset-img{
+    position: absolute;
+    left: -250px;
+}
+
+.gifset-information{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 300px;
+}
+
+.price_padding{
+    padding: 64px 0 12px;
+}
+
+.card__title_margin{
+    margin-bottom: 12px;
+}
+
+.card__paragraph_width{
+    width: 430px;
+}
+
+.card__paragraph_margin{
+    margin-bottom: 24px;
+}
+
+.specifications {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 46px;
+}
+
+.specifications__one{
+    display: flex;
+}
+
+.specifications__one img{
+    margin-right: 19px;
+}
+
+.specifications__info {
+    text-align: left;
+    margin-right: 38px;
+}
+
+.specification__title {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.buy-button_indent{
+    margin-right: 125px;
+}
+
+.combo{
+    background: linear-gradient(90deg, #F9FBFF  80%, #415167 20%);
+    padding-bottom: 128px;
+}
+
+.list-combo{
+    margin-left: 128px;
+    margin-top: 64px;
+    display: flex;
+}
+
+.combo-card{
+    width: 349px;
+    height: 562px;
+    background-color: #fff;
+    box-shadow: 0 4px 24px #CDCDCD;
+    margin-right: 30px;
+}
+
+.combo-card_infomation{
+    width: 300px;
+}
+
+.combo__price{
+    padding-top: 21px;
+}
+
+.combo__paragraph{
+    margin-bottom: 20px;
+}
+
+.footer{
+    text-align: center;
+    padding: 20px 0;
+    background-color: #EDF0F5;
+}
+
+
+/* Слайдер */
+.slick-slider{
+    
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    
+    overflow: hidden;
+    padding:0 20% 0 0 !important;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+    padding: 20px;
+}
+
+/* Слайд */
+.slick-slide{
+    width: 559px !important;
+    margin-right: 30px;
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+
+
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+
+
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+
+.list-product{
+    position: relative;
+}
+
+/* Стрелка */
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    z-index: 10;
+    font-size: 0;
+    background-color: #C7A17A;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+    left: -40px;
+}
+/* Стрелка вправо */
+ .slick-arrow.slick-next{
+    right: 160px;
+}
+
+.list-combo {
+    position: relative;
+}
+
+
+/* Стрелка влево */
+.list-combo .slick-arrow.slick-prev{
+    left: -40px;
+}
+/* Стрелка вправо */
+.list-combo .slick-arrow.slick-next{
+    right: 160px;
+}
+/* Стрелка не активная */
+
+.list-combo .slick-arrow.slick-disabled{}
